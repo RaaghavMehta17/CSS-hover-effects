@@ -1,0 +1,68 @@
+body{
+    background-image:url('p1.jpeg');
+    background-size:1440px;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+.glitch{
+    font-family: 'Bangers', cursive;
+    font-size:160px;
+    text-decoration:none;
+    top:75%;
+    left:27%;
+    line-height:1;
+    position:absolute;
+    color:black;
+    transform:translate(-10%,-50%);
+    font-weight: bold;
+    margin:0;
+}
+.glitch::before,
+.glitch::after{
+    content:"Miles Morales";
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    opacity:0.8;
+}
+.glitch:before{
+    color:#0ff;
+    z-index:-1;
+}
+.glitch:after{
+    color:#f0f;
+    z-index:-2;
+}
+@keyframes glitch{
+    0%{
+        transform:translate(0);
+    }
+    20%{
+        transform:translate(-5px,5px);
+    }
+    40%{
+        transform:translate(-5px,-5px);
+    }
+    60%{
+        transform:translate(5px,5px);
+    }
+    80%{
+        transform:translate(5px,-5px);
+    }
+    to{
+        transform:translate(0);
+    }
+}
+.glitch:hover::before{
+    animation: glitch .3s cubic-bezier(.25,0.46,.45,.94) both infinite;
+}
+.glitch:hover::after{
+    animation: glitch .3s cubic-bezier(.25,0.46,.45,.94) reverse both infinite;
+}
