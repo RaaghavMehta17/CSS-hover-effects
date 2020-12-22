@@ -1,0 +1,73 @@
+body{
+    background:#74b9ff;
+    margin:0;
+    padding:0;
+}
+.container{
+    height:350px;
+    width:350px;
+    background:url('front.jpg');
+    background-size:100% 100%;
+    position:absolute;
+    margin:auto;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    cursor:pointer;
+    box-shadow:5px 10px 10px #786fa6;
+    border:5px solid #0984e3;
+} 
+.slider,.slider:before,.slider:after{
+    height:0;
+    width:33.33%;
+    background-color:rgba(63, 191, 191, 0.5);
+}   
+.slider:before,.slider:after{
+    position:absolute;
+    content:'';
+}
+.slider:before{
+    left:33.33%;
+}
+.slider:after{
+    left:66.66%;
+}
+.container:hover .slider{
+    height:100%;
+    transition-duration:1s;
+}
+.container:hover .slider:before{
+    height:100%;
+    transition-duration:1.5s;
+}
+.container:hover .slider:after{
+    height:100%;
+    transition-duration:2s;
+}
+.caption{
+    height:60%;
+    width:60%;
+    border:5px solid #40739e;
+    display:flex;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    margin:auto;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    color:white;
+    padding:10px;
+    font-size:20px;
+    transform:scale(0);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    line-height: 2em;
+}
+.container:hover .caption{
+    transform:scale(1);
+    transition:1s;
+    transition-delay:0.5s;
+}
