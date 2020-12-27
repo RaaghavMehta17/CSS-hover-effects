@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>Document</title><style>@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+	 body{font-family: tahoma;}
+* {
+  box-sizing: border-box;
+}
+body{
+    background: #2980b9;
+}
+
+ 
+
+h1 {
+  margin: 0 auto 5px;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Bree Serif', serif;
+}
+
+.container {
+   width: 840px;
+   margin: 0 auto;
+}
+
+header {
+  font-family: 'Bree Serif', serif;
+  text-align: center;
+  margin: 50px 0 25px;
+  color: #34495E;
+}
+header p {
+  margin: 0;
+  color: rgba(52, 73, 94, 0.4);
+}
+li {
+   
+          perspective: 400px;
+}
+img{
+  width: 100%;
+}
+.info {
+   transform: rotate3d(1, 0, 0, 90deg);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  pointer-events: none;
+  background-color:#f1c40f;
+}
+ul {
+  padding: 0;
+  margin: 0 0 50px;
+}
+ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+li {
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  padding: 0;
+  list-style: none;
+}
+li a {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  border-radius: 4px;
+}
+li h3 {
+  margin: 0;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+}
+li p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.8);
+}
+li .normal {
+  width: 100%;
+  height: 100%;
+  background-color: #ECF0F1;
+  color: rgba(52, 73, 94, 0.6);
+  box-shadow: inset 0 2px 20px #e6ebed;
+  text-align: center;
+  font-size: 50px;
+  line-height: 200px;
+}
+li .normal svg {
+  pointer-events: none;
+  width: 50px;
+}
+li .normal svg path {
+  fill: rgba(52, 73, 94, 0.2);
+}
+.in-top .info {
+   transform-origin: 50% 0%;
+          animation: in-top 300ms ease 0ms 1 forwards;
+}
+
+.in-right .info {
+   transform-origin: 100% 0%;
+           animation: in-right 300ms ease 0ms 1 forwards;
+}
+
+.in-bottom .info {
+         transform-origin: 50% 100%;
+          animation: in-bottom 300ms ease 0ms 1 forwards;
+}
+
+.in-left .info {
+   transform-origin: 0% 0%;
+   animation: in-left 300ms ease 0ms 1 forwards;
+}
+
+.out-top .info { 
+          transform-origin: 50% 0%;
+           animation: out-top 300ms ease 0ms 1 forwards;
+}
+
+.out-right .info { 
+          transform-origin: 100% 50%; 
+          animation: out-right 300ms ease 0ms 1 forwards;
+}
+
+.out-bottom .info { 
+          transform-origin: 50% 100%; 
+          animation: out-bottom 300ms ease 0ms 1 forwards;
+}
+
+.out-left .info {
+   
+          transform-origin: 0% 0%; 
+          animation: out-left 300ms ease 0ms 1 forwards;
+}
+ 
+
+@keyframes in-top {
+  from {
+    transform: rotate3d(-1, 0, 0, 90deg);
+  }
+  to {
+     transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+ 
+@keyframes in-right {
+  from {
+     transform: rotate3d(0, -1, 0, 90deg);
+  }
+  to {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+ 
+@keyframes in-bottom {
+  from {
+    transform: rotate3d(1, 0, 0, 90deg);
+  }
+  to {
+     transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+ 
+@keyframes in-left {
+  from {
+    transform: rotate3d(0, 1, 0, 90deg);
+  }
+  to {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+ 
+@keyframes out-top {
+  from {
+      transform: rotate3d(0, 0, 0, 0deg);
+  }
+  to {
+    transform: rotate3d(-1, 0, 0, 104deg);
+  }
+}
+ 
+@keyframes out-right {
+  from {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+  to {
+     transform: rotate3d(0, -1, 0, 104deg);
+  }
+}
+ 
+@keyframes out-bottom {
+  from {
+      transform: rotate3d(0, 0, 0, 0deg);
+  }
+  to {
+       transform: rotate3d(1, 0, 0, 104deg);
+  }
+}
+ 
+@keyframes out-left {
+  from {
+       transform: rotate3d(0, 0, 0, 0deg);
+  }
+  to {
+        transform: rotate3d(0, 1, 0, 104deg);
+  }
+}
+
+
+
+</style>
+ </head>
+ <body><br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ `
+ 	<div class="container">
+  <ul class="direction-aware">
+    <li class="out-bottom">
+      <a class="normal" href="#">
+         <img src="a1.jpg">
+      </a>
+      <div class="info">
+        <h3>Ashley Nicolette Frangipane</h3>
+        <p> American singer, songwriter, and activist.Gaining attention from self-released music on social media platforms, she was signed by Astralwerks in 2014 </p>
+      </div>
+    </li>
+    <li class="out-bottom">
+      <a class="normal" href="#">
+       <img src="a2.jpg">
+      </a>
+      <div class="info">
+        <h3>Justin Drew Bieber </h3>
+        <p>Canadian singer, songwriter, and actor.Discovered at 13 years old by talent manager Scooter Braun after he had watched his YouTube cover song videos.</p>
+      </div>
+    </li>
+    <li class="out-bottom">
+      <a class="normal" href="#">
+        <img src="a3.jpg">
+      </a>
+      <div class="info">
+        <h3>Ariana Grande-Butera</h3>
+        <p>American singer, songwriter, and actress. Born in Boca Raton, Florida, Grande began her career in the 2008 Broadway musical 13.</p>
+      </div>
+    </li>
+    <li class="out-bottom">
+      <a class="normal" href="#">
+        <img src="a4.jpg">
+      </a>
+      <div class="info">
+        <h3>Selena Marie Gomez </h3>
+        <p>American singer, songwriter, actress, and television producer.Born and raised in Texas, Gomez began her career by appearing on the television show Barney & Friends</p>
+      </div>
+    </li>
+    <li class="out-bottom">
+      <a class="normal" href="#">
+        <img src="a5.jpg">
+      </a>
+      <div class="info">
+        <h3>Taylor Alison Swift </h3>
+        <p>American singer-songwriter. Her narrative songwriting often centers around her personal life, and has received widespread critical praise and media coverage.</p>
+      </div>
+    </li>
+    <li class="out-bottom">
+      <a class="normal" href="#">
+       <img src="a6.jpg">
+      </a>
+      <div class="info">
+        <h3>Troye Sivan Mellet </h3>
+        <p>South African–born Australian singer-songwriter, actor, and YouTuber. After gaining popularity as a singer on YouTube and in Australian talent competitions, Sivan signed with EMI Australia in 2013</p>
+      </div>
+    </li>
+    <li class="out-bottom">
+      <a class="normal" href="#">
+       <img src="a7.jpg">
+      </a>
+      <div class="info">
+        <h3>Aubrey Drake Graham</h3>
+        <p>Canadian rapper, singer, songwriter, record producer, actor, and entrepreneur. Drake is widely credited for popularizing the Toronto sound</p>
+      </div>
+    </li>
+    <li class="out-bottom">
+      <a class="normal" href="#">
+        <img src="a8.jpeg">
+      </a>
+      <div class="info">
+        <h3>Khalid Donnel Robinson</h3>
+        <p>American singer and songwriter. He is signed to Right Hand Music Group and RCA Records. His debut single, "Location", was released in July 2016 </p>
+      </div>
+    </li>
+    
+   <script>
+
+
+
+
+var nodes  = document.querySelectorAll('li'),
+    _nodes = [].slice.call(nodes, 0);
+
+var getDirection = function (ev, obj) {
+    var w = obj.offsetWidth,
+        h = obj.offsetHeight,
+        x = (ev.pageX - obj.offsetLeft - (w / 2) * (w > h ? (h / w) : 1)),
+        y = (ev.pageY - obj.offsetTop - (h / 2) * (h > w ? (w / h) : 1)),
+        d = Math.round( Math.atan2(y, x) / 1.57079633 + 5 ) % 4;
+  
+    return d;
+};
+
+var addClass = function ( ev, obj, state ) {
+    var direction = getDirection( ev, obj ),
+        class_suffix = "";
+    
+    obj.className = "";
+    
+    switch ( direction ) {
+        case 0 : class_suffix = '-top';    break;
+        case 1 : class_suffix = '-right';  break;
+        case 2 : class_suffix = '-bottom'; break;
+        case 3 : class_suffix = '-left';   break;
+    }
+    
+    obj.classList.add( state + class_suffix );
+};
+
+
+_nodes.forEach(function (el) {
+    el.addEventListener('mouseover', function (ev) {
+        addClass( ev, this, 'in' );
+    }, false);
+
+    el.addEventListener('mouseout', function (ev) {
+        addClass( ev, this, 'out' );
+    }, false);
+});</script>
+ </body>
+ </html>
