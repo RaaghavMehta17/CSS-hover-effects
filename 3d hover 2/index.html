@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+        </style>
+    <meta charset="UTF-8">
+    <title>Document</title>
+       <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body{    
+            font-family: 'Rye', cursive;
+    
+}
+
+        body{
+            background-image: url(v4.jpg);
+            background-size:1580px;
+            
+        }
+    .team .item {
+  text-align: center;
+  position: relative;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.team .item:hover .info {
+  bottom: 50px;
+}
+.team .item:hover .team-img:after {
+  opacity: 1;
+  visibility: visible;
+}
+.team .item .team-img {
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+}
+.team .item .team-img:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  background: -webkit-gradient(linear, left bottom, left top, from(#111), to(rgba(0, 0, 0, 0.4)));
+  background: linear-gradient(to top, #111, rgba(0, 0, 0, 0.4));
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+.team .item .info {
+  position: absolute;
+  bottom: -500px;
+  left: 0;
+  padding: 0 15px;
+  width: 100%;
+  z-index: 4;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+.team .item .info h6 {
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+.team .item .info span {
+  font-size: 13px;
+  font-style: italic;
+  margin-bottom: 10px;
+  color: rgb(0, 98, 128);
+}
+.team .item .info p {
+  margin-bottom: 10px;
+  color: #a9a9a9;
+}
+.team .item .info .icon {
+  margin: 0 10px;
+  font-size: 12px;
+  color: #eee;
+  cursor: pointer;
+}
+        .pink{
+            color: maroon;
+            font-weight: bold;
+        }
+    
+    </style>
+</head>
+<body>
+    <section class="team " data-background="img/dots.png">
+            <div class="container">
+                <div class="row">
+<br><br><br>
+                    <div class="section-head text-center col-sm-12">
+                        
+                        <br><br>
+                    </div>
+                  
+                        <div class="item col-md-4">
+                            <div class="hover3d">
+                                <div class="hover3d-child">
+                                    <div class="team-img">
+                                        <img src="a1.jpg"  class="img-responsive" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <div>
+                                            <h6>Harry Potter</h6>
+                                            <span>Auror</span>
+                                            <p>Harry James Potter was an English half-blood wizard, and one of the most famous wizards of modern times. He was the only child and son of James and Lily Potter.</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="item col-md-4">
+                            <div class="hover3d">
+                                <div class="hover3d-child">
+                                    <div class="team-img">
+                                    <img src="v2.jpg"  class="img-responsive" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <div>
+                                            <h6>Hermione Granger</h6>
+                                            <span>Minister of Magic</span>
+                                            <p>Minister Hermione Jean Granger was an English Muggle-born witch born to Mr and Mrs Granger.At the age of eleven, she was accepted into Hogwarts School of Witchcraft and Wizardry. </p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item col-md-4">
+                            <div class="hover3d">
+                                <div class="hover3d-child">
+                                    <div class="team-img">
+                                        <img src="b3.jpg" class="img-responsive" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <div>
+                                            <h6>Ron Weasley</h6>
+                                            <span>Auror</span>
+                                            <p>Ronald Bilius "Ron" Weasley was an English pure-blood wizard, the sixth and youngest son of Arthur and Molly Weasley.He was also the younger brother of Bill, Charlie, Percy, Fred, George, and the elder brother of Ginny.</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+ 
+                   
+
+                </div>
+            </div>
+        </section>
+<script src="jquery.hover3d.min.js"></script>
+<script>
+    $(".hover3d").hover3d({
+        selector: ".hover3d-child",
+        invert: true
+    });
+</script>
+</body>
+</html>
